@@ -1,0 +1,21 @@
+.App {
+    background-color: #101010;
+    height: 100vh;
+}
+
+.menu-bar {
+    position: fixed;
+    width: 100vw;
+}
+
+.navigation-content {
+    background-color: transparent !important;
+    border: none;
+    padding: 15px;
+}
+
+.item {
+    color: whitesmoke;
+    font: "Helvetica" !important;
+    cursor: pointer;
+}

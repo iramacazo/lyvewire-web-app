@@ -1,21 +1,21 @@
-import * as React from 'react';
-import HomePage from "../HomePage/index";
-import LandingPage from "../LandingPage/index";
-import StreamingPage from "../StreamingPage/index"
+import * as React from "react";
+import HomePage from "../HomePage";
+import MenuBar from "./components/menu";
+import "./styles.css";
+// import LandingPage from "../LandingPage";
+// import StreamingPage from "../StreamingPage";
 
 class App extends React.Component {
-  public render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    public render() {
+        return (
+            <div className="App">
+                <MenuBar />
+                <HomePage />
+                {/* <LandingPage />
+                <StreamingPage /> */}
+            </div>
+        );
+    }
 }
 
 export default App;
