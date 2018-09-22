@@ -1,4 +1,7 @@
 import * as React from 'react';
+import HomePage from "../HomePage/index";
+import LandingPage from "../LandingPage/index";
+import StreamingPage from "../StreamingPage/index"
 
 class App extends React.Component {
   public render() {
