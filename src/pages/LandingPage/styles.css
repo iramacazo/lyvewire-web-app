@@ -1,0 +1,53 @@
+.background-container {
+    width: 100vw !important;
+    background-image: url("../../assets/images/header.jpg") !important;
+    height: 28vw !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.inner-text {
+    text-align: justify;
+    width: 100vw !important;
+    height: 28vw !important;
+    padding: 100px 200px 0 200px;
+    position: absolute;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0),
+        #101010
+    );
+}
+
+.landing-description {
+    color: white !important;
+    font-size: 1em !important;
+    width: 40vw !important;
+}
+
+.landing-tagline {
+    color: white !important;
+    font-size: 1.4em !important;
+    font-weight: 200;
+}
+
+.header-name{
+    color: white !important;
+    font-size: 3.5em !important;
+}
+
+.speakers-header{
+    color: white !important;
+    font-size: 2em !important;
+}
+
+.speakers-container{
+    width: 100vw !important;
+    padding: 30vw 200px 0 200px !important;
+}
