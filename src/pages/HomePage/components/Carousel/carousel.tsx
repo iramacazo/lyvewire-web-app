@@ -12,7 +12,7 @@ interface IStateType {
     activeIndex: number;
 }
 
-const MOVE_CAROUSEL_MILISECONDS = 5_000;
+const MOVE_CAROUSEL_MILISECONDS = 8_000;
 
 @inject("carousel")
 @observer
