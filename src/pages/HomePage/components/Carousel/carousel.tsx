@@ -1,8 +1,8 @@
 import { inject, observer } from "mobx-react";
 import * as React from "react";
-import FetchableState from "../../../entities/enums/fetchable_state";
-import { CarouselState } from "../../../store/carousel";
-import CarouselItemView from "./CarouselItem";
+import FetchableState from "../../../../entities/enums/fetchable_state";
+import { CarouselState } from "../../../../store/carousel";
+import CarouselItemView from "../CarouselItem";
 
 interface IPropsType {
     carousel?: CarouselState;
