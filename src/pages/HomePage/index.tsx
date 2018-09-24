@@ -1,7 +1,7 @@
 import * as React from "react";
 import CarouselController from "../../controller/carousel";
 import HomeCarousel from "./components/Carousel/carousel";
-import HomeFooter from "./components/footer";
+import HomeFooter from "./components/Footer/footer";
 import "./styles.css";
 
 
