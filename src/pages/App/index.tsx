@@ -10,9 +10,6 @@ class App extends React.Component {
             <div className="App">
                 <MenuBar />
                 <LandingPage />
-                {/*
-                <HomePage />
-                <StreamingPage /> */}
             </div>
         );
     }
