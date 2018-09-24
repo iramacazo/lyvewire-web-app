@@ -11,9 +11,9 @@ export default class MenuBar extends React.Component {
                     size="massive"
                     inverted={true}
                 >
-                    <Menu.Item>Lyvewire</Menu.Item>
+                    <Menu.Item className="menu-item">Lyvewire</Menu.Item>
                     <Menu.Menu position="right">
-                        <Menu.Item>Sign In</Menu.Item>
+                        <Menu.Item className="menu-item">Sign In</Menu.Item>
                     </Menu.Menu>
                 </Menu>
             </div>
