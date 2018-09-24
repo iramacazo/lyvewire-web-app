@@ -1,4 +1,59 @@
 .carousel {
-    height: 600px;
-    background-color: black;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.carousel-image {
+    height: 500px;
+    width: 100vw;
+    object-fit: cover;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.event-cover {
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.event-text {
+    margin: 50px;
+}
+
+.button {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+h1.event-title {
+    font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
 }
