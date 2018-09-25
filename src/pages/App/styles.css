@@ -25,8 +25,33 @@
     cursor: pointer;
 }
 
-.link {
+.ui.container {
     font-size: 20px;
+    padding: 50px;
+    padding-top: 5px;
+}
+
+.inputs {
+    margin-bottom: 40px;
+}
+
+.input-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sign-button {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.link {
+    font-size: 15px;
     cursor: pointer;
     color: rgb(64, 64, 250);
+    margin-bottom: 30px !important;
 }
