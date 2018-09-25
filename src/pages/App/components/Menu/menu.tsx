@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Menu } from "semantic-ui-react";
+import lyvewirelogo from "../../../../assets/images/lyvewire_temp_logo.png"
 import UserModal from "../UserModal/modal";
 
 export default class MenuBar extends React.Component {
@@ -22,7 +23,7 @@ export default class MenuBar extends React.Component {
                     size="massive"
                     inverted={true}
                 >
-                    <Menu.Item className="menu-item">Lyvewire</Menu.Item>
+                    <img className="logo" src={lyvewirelogo}/>
                     <Menu.Menu position="right">
                         <Menu.Item
                             className="menu-item"

@@ -13,6 +13,11 @@
     width: 100vw;
     z-index: 1000;
 }
+.logo{
+    margin-left: 10px;
+    width:130px;
+    height: 50px;
+}
 
 .navigation-content {
     background-color: transparent !important;
@@ -54,4 +59,8 @@
     cursor: pointer;
     color: rgb(64, 64, 250);
     margin-bottom: 30px !important;
+}
+.ui.inverted.button{
+    box-shadow: 0 0 0 1px #fff inset!important;
+    border-radius: 6px!important;
 }
