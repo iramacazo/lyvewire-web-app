@@ -1,5 +1,6 @@
 import { inject, observer } from "mobx-react";
 import * as React from "react";
+import { Icon } from "semantic-ui-react";
 import FetchableState from "../../../../entities/enums/fetchable_state";
 import { CarouselState } from "../../../../store/carousel";
 import CarouselItemView from "../CarouselItem";
@@ -47,7 +48,13 @@ export default class HomeCarousel extends React.Component<
         const activeItem = carousel!.carouselItems![activeIndex];
 
         return (
-            <div>
+            <div className="carousel">
+                <div className="carousel-arrow left">
+                    <Icon size="huge" inverted={true} name="arrow left" />
+                </div>
+                <div className="carousel-arrow right">
+                    <Icon size="huge" inverted={true} name="arrow right" />
+                </div>
                 <CarouselItemView carouselItem={activeItem} />
             </div>
         );
