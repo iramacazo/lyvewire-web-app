@@ -4,6 +4,24 @@
     position: relative;
 }
 
+.carousel-arrow {
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
 .carousel-image {
     height: 500px;
     width: 100vw;
