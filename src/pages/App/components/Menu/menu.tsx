@@ -11,7 +11,7 @@ export default class MenuBar extends React.Component {
         this.setState({
             isOpen: !this.state.isOpen,
         });
-    }
+    };
 
     public render() {
         return (
