@@ -18,11 +18,11 @@
 }
 
 .left {
-    left: 10px;
+    left: 40px;
 }
 
 .right {
-    right: 10px;
+    right: 40px;
 }
 
 .carousel-image {
@@ -93,8 +93,17 @@ p {
 
 .footer-team {
     color: whitesmoke;
-    margin-top: 80px;
+    margin-top: 50px;
     opacity: 0.5;
+}
+
+.technologies {
+    margin: 15px;
+}
+
+.technologies > i {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .footer-team > p {
