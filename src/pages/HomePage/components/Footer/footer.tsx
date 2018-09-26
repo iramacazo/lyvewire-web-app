@@ -12,7 +12,7 @@ export default class HomeFooter extends React.Component {
                     <Button inverted={true}>Submit feedback</Button>
                 </div>
                 <div className="footer-team">
-                    <div>
+                    <div className="technologies">
                         <Icon inverted={true} name="react" size="large" />
                         <Icon inverted={true} name="node" size="large" />
                         <Icon inverted={true} name="npm" size="large" />
