@@ -29,6 +29,8 @@ export default class UserModal extends React.Component<IPropsType> {
     };
 
     public render() {
+        const headerImage = require("../../../../assets/images/lyvewire_colored_temp.png");
+
         return (
             <Modal
                 className="user-modal"
@@ -37,7 +39,7 @@ export default class UserModal extends React.Component<IPropsType> {
                 onClose={this.props.toggleModal}
             >
                 <div className="modal-logo">
-                    <Image src="https://blog.macsales.com/wp-content/uploads/2018/06/Mojave.jpg" />
+                    <Image src={String(headerImage)} />
                 </div>
                 <this.state.activeContent toggleContent={this.toggleContent} />
             </Modal>
