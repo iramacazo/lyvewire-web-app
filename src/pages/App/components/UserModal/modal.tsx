@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Modal } from "semantic-ui-react";
+import { Image, Modal } from "semantic-ui-react";
 import SignIn from "../SignIn/sign_in";
 import SignUp from "../SignUp/sign_up";
 
@@ -36,11 +36,9 @@ export default class UserModal extends React.Component<IPropsType> {
                 size="tiny"
                 onClose={this.props.toggleModal}
             >
-                <Modal.Header>
-                    {this.state.activeContent === SignIn
-                        ? "Sign In"
-                        : "Sign Up"}
-                </Modal.Header>
+                <div className="modal-logo">
+                    <Image src="https://blog.macsales.com/wp-content/uploads/2018/06/Mojave.jpg" />
+                </div>
                 <this.state.activeContent toggleContent={this.toggleContent} />
             </Modal>
         );
