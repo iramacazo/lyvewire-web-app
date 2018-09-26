@@ -50,10 +50,10 @@ export default class HomeCarousel extends React.Component<
         return (
             <div className="carousel">
                 <div className="carousel-arrow left">
-                    <Icon size="huge" inverted={true} name="arrow left" />
+                    <Icon size="big" inverted={true} name="arrow left" />
                 </div>
                 <div className="carousel-arrow right">
-                    <Icon size="huge" inverted={true} name="arrow right" />
+                    <Icon size="big" inverted={true} name="arrow right" />
                 </div>
                 <CarouselItemView carouselItem={activeItem} />
             </div>
