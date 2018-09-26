@@ -26,7 +26,7 @@ export default class MenuBar extends React.Component {
                     <img className="logo" src={lyvewirelogo}/>
                     <Menu.Menu position="right">
                         <Menu.Item
-                            className="menu-item"
+                            className="user-sign-in"
                             onClick={this.toggleModal}
                         >
                             Sign In
