@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Container, Header } from "semantic-ui-react";
+import SpeakerInfo from "./components/SpeakerInformation/speaker_info"
 import "./styles.css";
 
 export default class LandingPage extends React.Component {
@@ -24,6 +25,7 @@ export default class LandingPage extends React.Component {
                     <Header size='huge' className='speakers-header'>
                         Speakers
                     </Header>
+                    <SpeakerInfo/>
                 </Container>
             </div>
         );

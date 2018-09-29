@@ -1,0 +1,13 @@
+h3{
+    margin-top: 20px !important;
+    color: white !important;
+}
+
+.speakers-list{
+    padding: 25px 50px 0 50px;
+}
+
+.speaker-grid{
+    padding: 0 85px 0 85px;
+    text-align: center;
+}
