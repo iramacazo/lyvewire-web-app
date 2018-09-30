@@ -1,4 +1,4 @@
-.App {
+.App, .stream-page {
     background-color: #101010;
     height: 100vh;
 }
@@ -66,10 +66,9 @@ h4 {
     margin-bottom: 5px;
 }
 
-/* Sorry this is hacky, but inputs won't cooperate */
 .input {
+    margin-left: -40px; /* hacky hack */
     width: 100%;
-    margin-left: -40px !important;
 }
 
 .sign-button {
