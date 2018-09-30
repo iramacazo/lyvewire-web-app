@@ -1,0 +1,36 @@
+.stream-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream-navigation {
+    background-color: rgb(49, 49, 49);
+    border: none;
+    padding: 8px;
+}
+
+.stream-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.stream-div {
+    background-color: black;
+    height: inherit;
+    flex-grow: 1;
+    min-width: 800;
+}
+
+.stream-sidebar {
+    width: 320;
+    min-width: 320px;
+    height: inherit;
+    background-color: white;
+}
+
+.sidebar-section {
+    padding: 24px;
+}
