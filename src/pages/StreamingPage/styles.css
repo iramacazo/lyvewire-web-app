@@ -27,10 +27,45 @@
 .stream-sidebar {
     width: 320;
     min-width: 320px;
+    max-width: 320px;
     height: inherit;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-section {
-    padding: 24px;
+    padding: 8px;
+    overflow-x: hidden;
+}
+
+h3 {
+    margin-top: 32px;
+    padding-left: 8px;
+}
+
+.stream-chat {
+    height: inherit;
+}
+
+.feed {
+    max-height: 540px !important;
+    overflow-y: scroll;
+}
+
+h3, .extra {
+    color: whitesmoke !important;
+}
+
+div.content {
+    padding: 8px !important;
+}
+
+.chat-input {
+    margin-left: 48px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.ui.input {
+    padding-right: 24px !important;
 }
