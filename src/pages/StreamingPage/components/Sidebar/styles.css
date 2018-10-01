@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    cursor: pointer;
 }
 
 .sidebar-section.sidebar-section.collapsed div {
@@ -22,7 +21,7 @@
 .sidebar-section.expanded {
     height: 100%;
     padding-top: 24px;
-    background-color: #101010;
+    background-color: #29292980;
 }
 
 .sidebar {

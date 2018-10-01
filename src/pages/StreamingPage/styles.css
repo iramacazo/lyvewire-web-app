@@ -52,8 +52,39 @@ h3 {
     overflow-y: scroll;
 }
 
-h3, .extra {
+.chat-message-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-message-details {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3,
+.extra {
     color: whitesmoke !important;
+}
+
+.date {
+    color: rgb(139, 139, 139) !important;
+}
+
+.summary {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.summary > a {
+    color: rgb(158, 176, 249) !important;
+}
+
+.summary > a,
+.extra {
+    font-size: 0.85rem;
 }
 
 div.content {
@@ -68,4 +99,8 @@ div.content {
 
 .ui.input {
     padding-right: 24px !important;
+}
+
+.toggle-button {
+    margin-left: 16px !important;
 }
