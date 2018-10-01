@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lato%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C700%2C700i%2C900%2C900i");
+
+root {
+    font-family: "Lato";
+}
+
 .App, .stream-page {
     background-color: #101010;
     height: 100vh;
