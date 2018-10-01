@@ -16,11 +16,11 @@ export default class StreamChat extends React.Component<IPropsType> {
                         <h3>Chat</h3>
                         <Button
                             className="toggle-button"
-                            size="tiny"
                             onClick={this.props.toggleActive}
-                        >
-                            Show
-                        </Button>
+                            icon="chevron up"
+                            inverted={true}
+                            circular={true}
+                        />
                     </React.Fragment>
                 )}
 

@@ -15,11 +15,11 @@ export default class StreamQuestions extends React.Component<IPropsType> {
                         <h3>Questions</h3>
                         <Button
                             className="toggle-button"
-                            size="tiny"
                             onClick={this.props.toggleActive}
-                        >
-                            Show
-                        </Button>
+                            icon="chevron down"
+                            inverted={true}
+                            circular={true}
+                        />
                     </React.Fragment>
                 )}
             </div>
