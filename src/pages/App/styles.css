@@ -89,3 +89,7 @@ h4 {
     box-shadow: 0 0 0 1px #fff inset !important;
     border-radius: 6px !important;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
