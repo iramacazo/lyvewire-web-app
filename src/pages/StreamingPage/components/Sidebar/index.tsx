@@ -1,36 +1,53 @@
 import { inject, observer } from "mobx-react";
 import * as React from "react";
 import SidebarSection from "../../../../entities/enums/sidebar_section";
-import { StreamSidebar } from "../../../../store/stream_sidebar";
 import SidebarSectionView from "../SidebarSectionView";
 import StreamChat from "../StreamChat";
 import StreamQuestion from "../StreamQuestions";
 import "./styles.css";
 
-interface IPropsType {
-    streamSidebar?: StreamSidebar;
-}
-
 @inject("streamSidebar")
 @observer
-export default class Sidebar extends React.Component<IPropsType> {
+export default class Sidebar extends React.Component {
+    public state = {
+        activeSection: SidebarSection.Chat,
+    };
+
+    public toggleActiveSection = (section: SidebarSection) => {
+        if (section !== this.state.activeSection) {
+            this.setState({
+                activeSection: section,
+            });
+        }
+    };
+
     public render() {
-        const { streamSidebar } = this.props;
-        const { activeSection } = streamSidebar!;
+        const toggleQuestionActive = () =>
+            this.toggleActiveSection(SidebarSection.Question);
+        const toggleChatActive = () =>
+            this.toggleActiveSection(SidebarSection.Chat);
         return (
             <div className="sidebar">
                 <SidebarSectionView
-                    expanded={activeSection === SidebarSection.Question}
+                    expanded={
+                        this.state.activeSection === SidebarSection.Question
+                    }
                 >
                     <StreamQuestion
-                        expanded={activeSection === SidebarSection.Question}
+                        expanded={
+                            this.state.activeSection === SidebarSection.Question
+                        }
+                        toggleActive={toggleQuestionActive}
                     />
                 </SidebarSectionView>
                 <SidebarSectionView
-                    expanded={activeSection === SidebarSection.Chat}
+                    expanded={this.state.activeSection === SidebarSection.Chat}
                 >
                     <StreamChat
-                        expanded={activeSection === SidebarSection.Chat}
+                        expanded={
+                            this.state.activeSection === SidebarSection.Chat
+                        }
+                        toggleActive={toggleChatActive}
                     />
                 </SidebarSectionView>
             </div>
