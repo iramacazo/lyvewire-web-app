@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Feed, Input } from "semantic-ui-react";
+import { Button, Feed, Input } from "semantic-ui-react";
 import ChatMessage from "./components/ChatMessage";
 
 interface IPropsType {
@@ -10,10 +10,17 @@ interface IPropsType {
 export default class StreamChat extends React.Component<IPropsType> {
     public render() {
         return (
-            <div className="stream-chat" onClick={this.props.toggleActive}>
+            <div className="stream-chat">
                 {!this.props.expanded && (
                     <React.Fragment>
                         <h3>Chat</h3>
+                        <Button
+                            className="toggle-button"
+                            size="tiny"
+                            onClick={this.props.toggleActive}
+                        >
+                            Show
+                        </Button>
                     </React.Fragment>
                 )}
 
