@@ -65,7 +65,7 @@ h3 {
 }
 
 h3,
-.extra {
+.extra, .summary, .liked {
     color: whitesmoke !important;
 }
 
@@ -96,7 +96,7 @@ div.content {
     padding: 8px !important;
 }
 
-.chat-input {
+.chat-input, .question-input {
     margin-left: 48px;
     width: 100%;
     margin-top: 32px;
